@@ -1,0 +1,198 @@
+*{margin: 0;
+padding: 0;
+font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(lightskyblue,rgba(7, 17, 59, 0.534)), url(https://ibb.co/xs7psHz);
+ background-position: center;
+background-size: cover;
+position: relative;
+}
+.overlay{
+    background-image: linear-gradient(rgba(7, 17, 59, 0.534),lightskyblue);
+    width: 80%;
+    padding: 10%;
+    
+}
+.promo{
+    background-image: linear-gradient(lightskyblue,rgba(7, 17, 59, 0.534));
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 10%;
+    color: white;
+}
+.members{
+    background-image: linear-gradient(lightskyblue,rgba(7, 17, 59, 0.534));
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 10%;
+    color: white;
+}
+
+
+.outline{
+    background-image: linear-gradient(rgba(7, 17, 59, 0.534),lightskyblue);
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 10%;
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 150px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: white;
+text-decoration: none;
+font-size: 13px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: darkorange;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%; 
+}
+
+.text-box{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.text-box h1{
+    font-size: 62px;
+}
+
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: white;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+ 
+}
+.slider-caption{
+    text-align: center;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  border: 5px solid white;
+}
+img {vertical-align: middle;}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: white;
+}
+
+/* Caption text */
+.text {
+  color: black;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/4 etc) */
+.numbertext {
+  color: black;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
